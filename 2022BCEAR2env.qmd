@@ -1020,7 +1020,7 @@ write.xlsx(master_data, file = meta_file_name)
 list_file <- list.files(folder_output)
 sel_file <- list_file[str_detect(list_file, "_master_results_") &
   str_detect(list_file, trial_interest)]
-sel_file
+
 
 sel_file[1]
 blupDF_kp <- read_excel(
@@ -1112,7 +1112,7 @@ selIndex <- function (Y, b, scale = FALSE)
 res.pca <- pca_index(data = index_dat, id = "accession_name", b = c(10, -5, 10), percentage = 0.20)
 res.pca_final <- res.pca$final
 res.pca_final
-# ggsave(paste("images/selection",  trial_interest, Sys.Date(), ".png"), plot = res.pca_final, units = "in", dpi = 300, width = 10, height = 10)
+ggsave(paste("images/selection",  trial_interest, Sys.Date(), ".png"), plot = res.pca_final, units = "in", dpi = 300, width = 10, height = 10)
 res.pca$selection
 selections <- res.pca$results %>% rownames_to_column(var = "accession_name") 
 
