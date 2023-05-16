@@ -1,5 +1,5 @@
 ---
-title: "LAEPR trials 2022"
+title: "BCEAR trials 2022"
 author: "Luis Fernando Delgado Munoz"
 format: html
 code-fold: true
